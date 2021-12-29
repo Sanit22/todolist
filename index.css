@@ -1,0 +1,225 @@
+body{
+    height:100vh;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#app-container{
+    border: 2px solid black;
+    width: 700px;
+    height: 700px;
+}
+
+#controls-bar{
+    height:15px;
+    width:100%;
+    background-color: rgb(155, 0, 0);
+}
+
+#add-task-container{
+    display: flex;
+    height:75px;
+    width:100%;
+    background-color: rgb(198, 0, 0);
+    align-items: center;
+}
+
+#brand-name{
+    color: white;
+    margin-left:10px;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-size: 28px;
+    text-align: center;
+    padding-top:4px;
+}
+
+#add-task-input{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+    width:230px;
+    height: 37px;
+    background-color: white;
+    margin-left: 100px;   
+}
+
+#add-task-input input{
+    border: none;
+    outline: none;
+    margin-left: -5px;
+}
+
+#plus-icon{
+    color: rgb(182, 182, 182);
+}
+
+.completed-tasks{
+    height:100px;
+    width:150px;
+}
+
+#configure-buttons{
+    display: flex;
+    align-items: center;
+    margin-left:15px;
+    height: 37px;
+    width: 220px;
+}
+
+#select-task{
+    background-color: rgb(198, 0, 0);
+    width:80px;
+    height:80%;
+    border-radius: 5px;
+    border:none;
+    color:white
+}
+
+#add-task-button{
+    background-color: rgb(157, 19, 19);
+    margin-left: 30px;
+    width:80px;
+    height:90%;
+    border-radius: 5px;
+    border:none;
+    color:white;
+}
+
+#tasks-header{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+}
+
+#tasks-count{
+    display:flex;
+    justify-content: space-evenly;
+    width:190px;
+    color: grey;
+    font-style: italic;
+}
+
+#today-heading{
+    font-size: 2.5rem;
+    margin-left: 70px;
+    letter-spacing: 1.5px;
+}
+
+#clear-tasks{
+    text-decoration: underline;
+    border: none;
+    background-color: white;
+    margin-left: 180px;
+    color: rgb(148, 147, 147);
+}
+
+.tasks-container-design{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:300px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll; 
+    width: 100%;
+    background-image: url('./trees.jpeg');
+}
+
+.tasks-container-design::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+#completed-tasks-container{
+    height:208px;
+}
+
+#default-text-pending{
+    text-align: center;
+    color:grey;
+    font-style: italic;
+}
+
+.common-task-box{
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+    width:95%;
+    height:70px;
+    border-bottom: 1px solid grey;
+    position:relative;
+    background-color: white;
+    border-radius: 20px;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    background-color: #fff;
+    margin-left: 16px;
+    font: inherit;
+    color: currentColor;
+    width: 1.4em;
+    height: 1.4em;
+    border: 0.2em solid currentColor;
+    border-radius: 0.7em;
+}
+
+.checkbox-div{
+    height: auto;
+    width: auto;
+}
+
+.checkbox-div i{
+    color:rgb(255, 255, 255);
+    height:2.5px;
+    width:2.5px;
+    position:absolute;
+    left:22px;
+    bottom:43px;
+}
+
+  
+input[type="checkbox"]:checked{
+    background-color:grey;
+}
+
+.task-description{
+    font-size: 20px;
+    margin-left: 30px;
+    width:400px;
+    height:40px;   
+    margin-right: 10px;
+    overflow: hidden;   
+}
+
+#tag{
+    margin-left:50px;
+}
+
+.delete-task{
+    margin-left:30px;
+}
+
+#completed-heading{
+    margin-top:20px;
+    display: none;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#default-text-completed{
+    text-align: center;
+    color:grey;
+    font-style: italic;
+    display: none;
+}
+
+.completed-task-box{
+    color:grey;
+    text-decoration: line-through;
+}
+
