@@ -131,7 +131,7 @@ body{
 }
 
 .tasks-container-design::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
+    display: none;  
 }
 
 #completed-tasks-container{
@@ -169,6 +169,7 @@ input[type="checkbox"] {
 }
 
 .checkbox-div{
+    position: relative;
     height: auto;
     width: auto;
 }
@@ -178,8 +179,8 @@ input[type="checkbox"] {
     height:2.5px;
     width:2.5px;
     position:absolute;
-    left:22px;
-    bottom:43px;
+    left:20px;
+    bottom:23px;
 }
 
   
