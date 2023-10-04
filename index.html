@@ -9,14 +9,12 @@
         <link rel="stylesheet" href="./index.css">
     </head>
     <body>
-        <!-- main app container -->
-        <div id = "app-container">
             
             <!-- add tasks container -->
             <div id = "add-task-container">
-                <div id = "brand-name">
-                    EVERLIST
-                </div>
+               
+                <h1 id="brand-name"> EVERLIST </h1>
+            
                 <div id = "add-task-input">
                     <i id = "plus-icon" class="fas fa-plus"></i>
                     <input id = "task-details" type="text" placeholder="Add a new task">
@@ -46,12 +44,14 @@
                     <p> Completed <span id="completed-count"> 0 </span> </p>
                     <p> Pending <span id="pending-count"> 0 </span></p>
                 </div>
-                <div id = "today-heading"> Today </div>
+                <!-- <div id = "today-heading"> Today </div> -->
+                <h2 id="today-heading"> Today </h2>
                 <button id="clear-tasks"> Clear all tasks  </button> 
             </div>
 
             <p id="default-text-pending"> Organise your day with some tasks </p>
 
+            <div id="task-container">
             <!-- pending tasks container -->
             <div id = "pending-tasks-container" class="tasks-container-design">
                 
@@ -65,6 +65,7 @@
                 
             </div>
         </div>
+        <!-- </div> -->
     <script src="./index.js">
     </script>
     </body>
