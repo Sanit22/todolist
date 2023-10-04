@@ -1,16 +1,8 @@
-body{
-    height:100vh;
+html, body{
+    height:100%;
     margin:0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-#app-container{
-    border: 2px solid black;
-    width: 700px;
-    height: 700px;
-}
 
 #controls-bar{
     height:15px;
@@ -20,7 +12,8 @@ body{
 
 #add-task-container{
     display: flex;
-    height:75px;
+    justify-content: space-around;
+    height:10vh;
     width:100%;
     background-color: rgb(198, 0, 0);
     align-items: center;
@@ -28,11 +21,7 @@ body{
 
 #brand-name{
     color: white;
-    margin-left:10px;
     font-family: 'IBM Plex Sans Thai', sans-serif;
-    font-size: 28px;
-    text-align: center;
-    padding-top:4px;
 }
 
 #add-task-input{
@@ -92,6 +81,7 @@ body{
     display: flex;
     height: 60px;
     align-items: center;
+    justify-content: space-around;
     padding-bottom: 10px;
     border-bottom: 1px solid grey;
 }
@@ -105,8 +95,7 @@ body{
 }
 
 #today-heading{
-    font-size: 2.5rem;
-    margin-left: 70px;
+    font-size: 2rem;
     letter-spacing: 1.5px;
 }
 
@@ -118,11 +107,15 @@ body{
     color: rgb(148, 147, 147);
 }
 
+#task-container{
+    height: 80vh;
+}
+
 .tasks-container-design{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height:300px;
+    height:100%;
     -ms-overflow-style: none;
     scrollbar-width: none;
     overflow-y: scroll; 
@@ -134,9 +127,13 @@ body{
     display: none;  
 }
 
-#completed-tasks-container{
-    height:208px;
+/* #pending-tasks-container{
+    height:50%;
 }
+
+#completed-tasks-container{
+    height:50%;
+} */
 
 #default-text-pending{
     text-align: center;
