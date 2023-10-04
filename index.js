@@ -1,22 +1,20 @@
-let pendingTasksContainer = document.getElementById("pending-tasks-container");
-let completedTasksContainer = document.getElementById('completed-tasks-container');
-let clearTasksButton = document.getElementById("clear-tasks");
-let addtaskButton = document.getElementById("add-task-button");
+const pendingTasksContainer = document.getElementById("pending-tasks-container");
+const completedTasksContainer = document.getElementById('completed-tasks-container');
+const clearTasksButton = document.getElementById("clear-tasks");
+const addtaskButton = document.getElementById("add-task-button");
 
 let pendingCount = 0;
 let completedCount = 0;
 
-let pendingDefText = document.getElementById("default-text-pending");
-let completedDefText = document.getElementById("default-text-completed");
-let completedVisual = document.getElementById("completed-visual");
-
+const pendingDefText = document.getElementById("default-text-pending");
+const completedDefText = document.getElementById("default-text-completed");
+const completedVisual = document.getElementById("completed-visual");
+const taskDescriptionDiv = document.getElementById("task-details");
+const tagDiv = document.getElementById("select-task");
 
 //adding a new task
 addtaskButton.addEventListener('click', function(e){
     e.preventDefault();
-
-    let taskDescriptionDiv = document.getElementById("task-details");
-    let tagDiv = document.getElementById("select-task");
     createNewTask(taskDescriptionDiv, tagDiv);
 });
 
